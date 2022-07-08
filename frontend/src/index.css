@@ -7,17 +7,20 @@
 }
 
 body {
+  background-color: #dadada;
+  color: black;
   font-family: 'Poppins', sans-serif;
 }
 
 .container {
+  background-color: #faf9f9;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 0px solid rgb(49, 49, 49);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .header {
@@ -25,11 +28,17 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  color: #1f1f1f;
 }
 
+.heading{
+  font-size: 28px;
+  font-weight: bolder;
+
+}
 .btn {
   display: inline-block;
-  background: #000; 
+  background: #c22b2b; 
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -57,12 +66,13 @@ body {
 }
 
 .task {
-  background: #f4f4f4;
+  color: black;
+  background-color: #e9ecef;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
   align-content: space-between;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .task.reminder {
@@ -81,6 +91,7 @@ body {
 }
 
 .form-control {
+  
   margin: 20px 0;
 }
 
@@ -88,12 +99,27 @@ body {
   display: block;
 }
 
-.form-control input {
+.form-control input, input:focus  {
   width: 100%;
   height: 40px;
   margin: 5px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 5px;
   padding: 3px 7px;
   font-size: 17px;
+  outline: none;
+} 
+input:focus  {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  background-color: #f3f3f3;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  outline: none;
 }
 
 .form-control-check {
