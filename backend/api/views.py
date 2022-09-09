@@ -37,6 +37,7 @@ def UpdateTask(request,pk):
 
 @api_view(['DELETE'])
 def DeleteTask(request,pk):
+    
     task = Task.objects.get(id=pk)
     task.delete()
     return Response('Deleted Successfully!')  

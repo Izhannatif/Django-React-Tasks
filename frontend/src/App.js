@@ -51,7 +51,8 @@ const response = await fetch(`http://127.0.0.1:8000/update-task/${id}`,{
 
 const data = await response.json()
 
-setTasks(tasks.map((task)=> task.id === id ? {...task,reminder: data.reminder}:task))};
+setTasks(tasks.map((task)=> task.id === id ? {...task,reminder: data.reminder}:task))
+};
 
 const addTask = async(task) =>{
 const response = await fetch('http://127.0.0.1:8000/create-task/',{
